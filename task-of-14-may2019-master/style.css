@@ -1,0 +1,240 @@
+/* write your styles here */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+marquee {
+    background-color: #ed484c;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+#highlight {
+    padding: 3px 10px;
+    background-color: #fdf733;
+    font-weight: bold;
+}
+ img{
+  height: 40px;
+  margin: 14px 24px;
+}
+header {
+    background-color: #4c4c4c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li {
+    list-style-type: none;
+    margin: 0px 14px;
+
+}
+ul {
+    display: flex;
+    flex-direction: row;
+}
+a {
+    color:#d3cbcb;
+    text-decoration: none;
+    font-weight: bold;
+}
+#circle {
+    background-image: url(images/floral.png);
+    display: flex;
+    flex-direction: column; 
+    background-color:#f18d97;
+    align-items: center; 
+}
+#circle h1 {
+    margin:42px 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+}
+#circle p {
+    border-top: 1px solid black;
+    border-bottom:1px solid black ;
+    padding: 26px ;
+    text-align: center; 
+    font-size: 22px;
+    margin: 22px 300px;
+   
+}
+#circle button {
+    background-color: #160d0e;
+    padding: 16px 60px;
+    border: none;
+    color: #f18d97;
+    margin-bottom: 22px;
+    font-size: 28px;
+}
+@media screen and (max-width:1024px){
+    #circle p{
+        font-size: 15px;
+    }
+    #circle button{
+        padding: 13px 50px;
+    }
+}
+#services {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/floral.png);
+    background-color: #efece7;
+}
+#services h2 {
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    font-size: 28px;
+    padding: 6px 0px;
+    margin: 10px 0px;
+}
+.combine figure>i {
+    font-size: 120px;
+    justify-content: center;
+    display: flex;
+    transition: color 2s;
+}
+.combine figure {
+    margin: 0;
+}
+.combine figure:hover>i{
+    color: #ef3b4d;
+}
+.combine {
+    display: flex;
+    flex-direction: row;
+
+}
+.combine figcaption>h3 {
+    text-align: center;
+}
+.combine figcaption>p {
+    text-align: center;
+}
+@media screen and (max-width:1024px){
+    .combine{
+        flex-direction: column;
+    }
+    .combine figcaption>p{
+        margin: 0px 120px;
+    }
+}
+#portfolio {
+    background-image: url(images/floral.png);
+    background-color: #ddceb4;
+    display: grid;
+}
+#portfolio figure img{
+    height:180px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    margin:0;
+}
+#portfolio figure {
+    position: relative;
+    margin:0;
+}
+#portfolio h2{
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    font-size: 28px;
+    padding: 6px 0px;
+}
+#portfolio p {
+    border-top: 1px solid black;
+    border-bottom:1px solid black ;
+    padding: 26px ;
+    text-align: center; 
+    font-size: 22px;
+    margin: 22px 300px;
+}
+#cohort figcaption {
+    height:180px;
+    width: 220px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: #303233;
+    text-align: center;
+    top: 0px;
+    left:0px;
+    margin: 0px;
+    display: none;
+}
+
+#cohort {
+    margin:14px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-row-gap:16px;
+    grid-column-gap:122px;
+}
+#cohort figcaption {
+    color:white;
+}
+#cohort figcaption i {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 10px;
+}
+#cohort figcaption i:hover {
+    background-color: white;
+    color:#101315;
+}
+@media screen and (max-width:1024px){
+    #cohort{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#social-media {
+    background-image:url(images/floral.png);
+    background-color:#afc7c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#social-media h2 {
+    margin-top: 0px;
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    font-size: 28px;
+    padding: 6px 0px;
+}
+#social-media i{
+    border: 1px solid black;
+    border-radius:100%;
+    padding: 16px 18px;
+    font-size: 50px;
+    margin: 20px 12px;
+    transition: color 1s, background-color 1s;
+}
+#social-media i:hover {
+    background-color: #212121;
+    color: #fcdea6;
+}
+
+footer {
+    background-color: #212121;
+}
+footer h3 {
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px 0px; 
+}
+footer i {
+    font-size:22px;
+    margin: 0 5px;
+    transition: color 1s;
+}
+footer:hover i {
+    color:#ef3b4d;
+}
